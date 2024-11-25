@@ -7,14 +7,6 @@ services:
     networks:
       - ragapp-network
 
-  ollama:
-    image: ollama/ollama:latest
-    ports:
-      - 11434:11434 
-    volumes:
-      - ./ollama:/root/.ollama
-    networks:
-      - ragapp-network
   
   setup:
     image: curlimages/curl:latest
